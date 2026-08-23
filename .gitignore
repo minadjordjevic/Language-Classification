@@ -1,0 +1,24 @@
+# Dataset
+data/*.json
+
+# Models
+models/
+
+# Results
+results/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
