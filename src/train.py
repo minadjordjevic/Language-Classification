@@ -10,8 +10,9 @@ def train_one_epoch(
     data_loader,
     optimizer,
     scheduler,
-    device
-):
+    device,
+    epoch=None
+    ):
     model.train()
 
     total_loss = 0.0
@@ -20,7 +21,11 @@ def train_one_epoch(
 
     start_time = time.time()
 
-    for batch in data_loader:
+    for batch in tqdm(
+        data_loader,
+        desc=f"Epoch {epoch}" if epoch is not None else "Training",
+        leave=True
+    ):
         input_ids = batch["input_ids"].to(device)
         attention_mask = batch["attention_mask"].to(device)
         labels = batch["labels"].to(device)
