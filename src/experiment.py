@@ -53,12 +53,13 @@ def run_experiment(
         for epoch in range(epochs):
 
             train_metrics = train_one_epoch(
-                model=model,
-                data_loader=train_loader,
-                optimizer=optimizer,
-                scheduler=None,
-                device=device,
-            )
+            model=model,
+            data_loader=train_loader,
+            optimizer=optimizer,
+            scheduler=None,
+            device=device,
+            epoch=epoch + 1,
+        )
 
             val_metrics = evaluate(
                 model=model,
