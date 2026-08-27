@@ -1,13 +1,6 @@
-# 🌍 Language Classification using BERT and PyTorch
+# Language Classification using BERT and PyTorch
 
 Praktična implementacija sistema za automatsku klasifikaciju jezika na osnovu tekstualnih podataka, korišćenjem neuronske mreže u PyTorch-u i pretreniranog modela `bert-base-multilingual-cased`.
-
-![Python](https://img.shields.io/badge/Python-3.x-blue)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
-![Transformers](https://img.shields.io/badge/🤗%20Transformers-yellow)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?logo=mlflow&logoColor=white)
-![License](https://img.shields.io/badge/status-experimental-lightgrey)
-
 ---
 
 ## 📌 Opis projekta
